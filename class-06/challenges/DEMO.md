@@ -4,7 +4,7 @@
 
 The demo code below introduces concepts necessary to complete the challenge.
 
-```
+```python
 
 # How to use Linux/Bash commands within Python
 
