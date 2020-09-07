@@ -1,10 +1,22 @@
-# Ops Challenge - Python Data Types and Variables 
+# Ops Challenge - Bash in Python 
 
 ## Demo Code
 
-The demo code below introduces concepts necessary to complete the challenge. 
+The demo code below introduces concepts necessary to complete the challenge.
 
 ```
+
+# How to use Linux/Bash commands within Python
+
+# First import the os library
+
+import os
+
+# Then use os.system to call any kind of bash command
+
+os.system("ls")
+
+# Here are some Python-specific operations for you to practice
 
 # How to print to terminal
 
@@ -18,21 +30,4 @@ var_greeting = "Welcome to Python!"
 
 print(var_greeting)
 
-# How to declare an integer
-
-var_integer = 450
-
-# How to decldare a float
-
-var_float = 24.12
-
-# How to declare a complex number
-
-var_complex = 24 + 2j
-
-# How to declare a boolean
-
-var_boolean = 2 > 1 
-
 ```
-
