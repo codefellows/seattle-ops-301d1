@@ -4,7 +4,7 @@
 
 The demo code below introduces concepts necessary to complete the challenge. 
 
-```
+```python
 # Python
 # These examples can be accessed at https://www.w3schools.com/python/python_functions.asp
 
@@ -26,12 +26,10 @@ my_function("Emil")
 my_function("Tobias")
 my_function("Linus")
 
-# How to setup a multiple-argument function
+# How to read input (refer to https://www.w3schools.com/python/python_user_input.asp)
 
-def my_function(fname, lname):
-  print(fname + " " + lname)
-
-my_function("Emil", "Refsnes")
+username = input("Enter username:")
+print("Username is: " + username)
 
 ```
 
