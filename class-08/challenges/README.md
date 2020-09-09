@@ -1,14 +1,13 @@
-# Ops Challenge: Python Loops
+# Ops Challenge: Powershell AD Automation 
 
 ## Overview
 
-Loops are useful for repeating an operation. There are several ways to create loops in Python. Today, you will be writing your own loops.
+Powershell can be a powerful tool in administering Active Directory (AD) users and computers. Today you'll write a Powershell script to add a new user to AD.
 
 ## Resources
 
-- [Python Lists](https://www.w3schools.com/python/python_lists.asp){:target="_blank"}
-- [Python For Loops](https://www.w3schools.com/python/python_for_loops.asp){:target="_blank"}
-- [Python While Loops](https://www.w3schools.com/python/python_while_loops.asp){:target="_blank"}
+- You will need a Windows Server with AD DS installed to GNS3 and the server promoted to Domain Controller
+- [Microsoft Documentation: New-ADUser](https://docs.microsoft.com/en-us/powershell/module/addsadministration/new-aduser?view=win10-ps){:target="_blank"}
 
 ## Demonstration
 
