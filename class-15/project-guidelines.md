@@ -1,4 +1,4 @@
-# Ops 201 Final Project Guidelines
+# Ops 301 Final Project Guidelines
 
 ## Conflict Plan
 
@@ -100,56 +100,68 @@ Technical merit of the project overall is evaluated according the requirements.
 
 ### Scenario
 
-Your team is a "Managed Service Provider" (MSP) and has been selected as one of the top companies to be contracted as a company's sole IT support. You are in talks with this potential new client. The decision-makers (CEO and other execs) of your client want to know, in a single presentation, what you will do for their company. Your presentation should be the most competitive and convincing that you will provide the best service and support for endpoint workstations.
+Your team is a cloud consulting firm specializing in cloud infrastructure and automation. You are currently in early stage talks with a [client company](https://www.builtinseattle.com/companies/best-midsize-places-to-work-seattle-2019) who has submitted a request for proposal (RFP) to migrate the company's existing on-prem infrastructure to the cloud. As part of the desired change, your client would also like to transition to a DevOps methodology when it comes to the deployment and upkeep of its new cloud infrastructure. The board of directors would like to see, in a single presentation, how this can be accomplished with your help. Your presentation should present a compelling case to work with you for this project.
 
-- Choose a real company as your example.  
-  - Company size: less than 500 people.
+- Choose a [client company](https://www.builtinseattle.com/companies/best-midsize-places-to-work-seattle-2019) as your example.  
+  - Company size: Mid-sized (roughly 500 people but larger is acceptable to use)
   - Use only publically available information/intelligence about the company. Dig deep to see how much you can learn!
   - Do not fabricate information to fill in gaps.
   - Do not include sensitive or confidential information such as vulnerabilities identified during your research of the organization.
-- Your pitch will be to the executives at the company.
+- Your proposal will be to the executives at the company.
 
 ### Presentation
 
 Components of the presentation must include:
 
-- Introduce your MSP by name, and team members.
-- As the "Problem Domain", describe the company you selected. Highlight what you researched about the company from public information, and why your MSP is a good fit (eg: why you selected this company for this project).
+- Introduce your cloud consulting firm by name, and team members.
+- As the "Problem Domain", describe the company you selected. Highlight what you researched about the company from public information, and why your company is a good fit (eg: why you selected this company for this project).
 - Discuss the client engagement proposal.
-- What will you do to offer IT support for the company’s desktop/laptop systems? - Build your pitch!
-- Use draw.io to create a network diagram of the organization’s LAN and cloud environments.
+- What will you do to transition the organization to a DevOps cloud infrastructure? 
+  - Each student must create and submit one working script that automates cloud system deployment or an aspect of the migration to cloud
+  - Cost analysis of both the process of migrating to cloud/DevOps style administration and monthly operational expenses (OpEx) associated with cloud usage.
+- Use a network diagramming tool to create a network diagram of the organization’s cloud environment.
+  - In GNS3 create a working LAN that depicts the company's remaining on-prem environment.
+  - Depict in both how your network accomodates up to 25%-90% of your employees being remote work from home (WFH) employees.
   
 - Present live technical demonstrations
   - All team members must present an equal share of the live technical demonstrations.
-  - Live technical demonstration of a system that facilitates desktop service delivery (Spiceworks may not be used):
-    - Including a complete ticket workflow (from creation to resolution, including reporting of KPIs and other analytics) including all systems involved. 
-    - Demonstrate how your MSP will document the client's assets and services (use the ITIL framework). Create this based on your best guess about what the company is likely to have. 
-    - What will their service catalog and device inventory look like? For device inventory, include a discussion of how hardware lifecycles will be managed and how equipment will be disposed of. How will you source computers and parts? 
-  - Live technical demonstration of a collection of shell scripting solutions that automates repetitive or tedious processes and adds value to organizational operations. Each team member must contribute one shell script to the project and present it themselves, explaining how it adds value as well as describing the technical structure of the script.
-  - Live technical demonstration of a network appliance and how the device will be configured to secure the network perimeter and deliver outstanding security and performance. 
-  - Live technical demonstration of a cloud system you will support, and how your processes add value to the system.
+  - Live technical demonstration of the new cloud environment via IaaS provider's web administration portal:
+    - Create a private cloud using one of the top IaaS providers (e.g. AWS, GCP, Azure, IBM Cloud, Oracle Cloud).
+    - Demonstrate how encrypted connectivity to the private cloud is performed from a local host. 
+    - Demonstrate how the deployment and configuration of a cloud server (one of the below components) can be achieved on this platform using infrastructure-as-code (IaC) scripting automation. 
+    - Your team will select a script and demo it during the live presentation
+    - Include in your cloud environment the following components:
+      - AD/Domain Controller(s)
+      - Web Server(s) 
+      - File Server or cloud-based file sharing platform(s)
+      - Endpoints
+    - Include evidence that the above components will be deployed with security best practice configurations.
 
-### MSP Statement of Work
+### Proposal Deliverable 
 
-Submit to instructor a single MSP Statement of Work including below deliverables. The document must be submitted as a Google Doc, with a complete version history showing how it was created. All team members are to contribute an equal share to the MSP Statement of Work document and should clearly indicate which components each contributed to in their individual project submission notes.
+Submit to instructor a single proposal. The document must be submitted as a Google Doc, with a complete version history showing how it was created. All team members are to contribute an equal share to the proposal and should clearly indicate which components each contributed to in their individual project submission notes.
 
-  - Acceptable Use Policy (AUP): How are users to handle and use company-owned computer technologies?
-  - Bring Your Own Device Policy (BYOD): How are users to handle and use personally-owned computer technologies while on organization campus?
-  - Service Level Agreement (SLA): Compose a complete, original, branded Service Level Agreement clearly indicating service delivery times and scope of services supported
-  - Standard Operating Procedures (SOP): Compose thorough SOPs for each of the following:
-    - How will you backup and restore user data, critical infrastructure configurations and hosted data?
-    - How will you securely dispose of sensitive data from storage media?
-    - How will you perform the support engagements/interactions? 
-    - What troubleshooting methodology will your technicians follow during support engagements? 
-    - How will user or department technology purchase requests be handled?
-    - How will technology needs be handled for employees being onboarded?
-    - How will technology needs be handled for employees being terminated?
-    - How will remote, offsite support engagements take place? 
-    - How will you secure Windows 10 endpoint workstations from data loss and malware threats?
-    - How will you administer and support Windows systems?
-    - How will your company enhance the network’s usability and security?
-    - How will you support company cloud services?
-  - Forms: Create a form related to each SOP where a form would benefit the process and be applicable/relevant.
-  - Process flowcharts: Create a process flowchart related to each SOP. Include the flowchart under your text body of the SOP.
-  - Work Instructions: Include work instructions for detailed step-by-step workflows.
+Here is a list of requirements the board of directors would like to see addressed in your proposal:
+- Central administration of all Windows-based computers
+  - A network topology diagram of your new cloud-based systems architecture design, pasted into your Google Doc.
+  - All components must be labeled, and network diagram must be presentable (straight lines) and free of defects/typographical issues. Take your time to create a quality network diagram; do not rush!
+- How the cloud environment's core network services will be administered
+  - Explain and justify your network diagram in detail. Clearly indicate what devices are hosting network servers DHCP and DNS. 
+  - Provide network configuration details.
+    - DHCP range
+    - Subnet mask
+    - IP address of all devices clearly indicated on network diagram
+- How will OS version control be handled?
+  - Describe in detail how OS version control will be handled centrally from a server-based solution. Hint: Read [Windows Server Update Services](https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus){:target="_blank"}
+- Physical hardware requirements of your proposal
+  - List all specs (similar to scenario hardware specs list above) of your cloud machines
+- Software requirements of your proposal, inluding all required licensing. Clearly indicate all software **versions** and **editions** to be used in your solution.
+- All associated costs including sourcing information, including who will you purchase all this from, at what price, and what terms.
+  - Include a projection of monthly overhead based on anticipated usage for given rates
+  - REMEMBER: A lower-cost proposal is more likely to be approved. While a budget was not specified, this organization is cost-sensitive at this stage to technology infrastructure purchases.
+- How will you migrate some on-prem systems to cloud DevOps style administration?
+  - Include a realistic timeline of implementation including major milestones. Create a project plan using a project management software of your choosing and include screenshots in your Google Doc submission accompanied with explanatory text. Justify your choice of milestone dates and why you believe these to be realistic estimates.
+
+Include in your proposal any changes that need to be made to endpoint systems specs and/or network infrastructure configuration, and why these changes are necessary.
+While this is not an internal RFC, include in your proposal all required elements for an [ITIL-compliant Request for Change (RFC)](https://wiki.en.it-processmaps.com/index.php/Checklist_Request_for_Change_RFC){:target="_blank"}. Exclude the RFC number.
 
